@@ -77,14 +77,6 @@ button:hover {
     padding-bottom: 50px;
 }
 
-.letter-paper {
-    width: min(100%, 700px);
-    background: #fffdf8;
-    padding: 55px 60px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
-}
-
 .date {
     text-align: right;
     font-size: 14px;
@@ -92,10 +84,23 @@ button:hover {
     margin-bottom: 35px;
 }
 
-.letter-paper h1 {
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 35px;
+.letter-paper {
+    width: min(100%, 700px);
+    background: #fffdf8;
+    padding: 55px 60px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    position: relative;
+}
+
+.letter-paper::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(111, 143, 114, 0.15);
 }
 
 .letter-content {
@@ -145,7 +150,7 @@ button:hover {
 @media (max-width: 600px) {
 
     .letter-paper {
-        padding: 40px 25px;
+        padding: 40px 25px 40px 35px;
     }
 
     .letter-content {
