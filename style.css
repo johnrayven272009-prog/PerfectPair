@@ -230,3 +230,22 @@ button:hover {
 .envelope-letter span {
     font-size: 35px;
 }
+
+/* ENVELOPE OPENING ANIMATION */
+
+.envelope-flap {
+    transform-origin: top center;
+    transition: transform 0.7s ease;
+}
+
+.envelope.open .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+.envelope-letter {
+    transition: transform 0.8s ease;
+}
+
+.envelope.open .envelope-letter {
+    transform: translateY(-70px);
+}
