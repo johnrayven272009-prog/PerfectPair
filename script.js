@@ -1,6 +1,13 @@
-function openLetter() {
-    document.getElementById("opening").classList.add("hidden");
-    document.getElementById("letter").classList.remove("hidden");
+function openEnvelope() {
+    const opening = document.getElementById("opening");
+    const envelope = document.querySelector(".envelope");
+
+    envelope.classList.add("open");
+
+    setTimeout(() => {
+        opening.classList.add("hidden");
+        document.getElementById("letter").classList.remove("hidden");
+    }, 1000);
 }
 
 function showEnding() {
