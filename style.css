@@ -105,6 +105,11 @@ button:hover {
     color: #383838;
 }
 
+.letter-content p:first-child {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
 .letter-content p {
     margin-bottom: 22px;
 }
