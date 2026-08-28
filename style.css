@@ -115,8 +115,9 @@ button:hover {
 }
 
 .signature {
-    margin-top: 35px;
+    margin-top: 40px;
     font-size: 19px;
+    font-style: italic;
 }
 
 /* ENDING */
