@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #f5f0e8;
+    color: #333;
+    font-family: Georgia, serif;
+}
+
+/* GENERAL SCREEN */
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* OPENING */
+
+.envelope {
+    text-align: center;
+    background: #fffdf8;
+    padding: 50px 35px;
+    width: min(90%, 420px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.envelope-heart {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.envelope h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.envelope p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+button {
+    border: none;
+    background: #6f8f72;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* LETTER */
+
+#letter {
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.letter-paper {
+    width: min(100%, 700px);
+    background: #fffdf8;
+    padding: 55px 60px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.date {
+    text-align: right;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 35px;
+}
+
+.letter-paper h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+.letter-content {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.letter-content p {
+    margin-bottom: 22px;
+}
+
+.signature {
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+/* ENDING */
+
+.ending-content {
+    text-align: center;
+}
+
+.small-heart {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.ending-content h1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.ending-content p {
+    color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .letter-paper {
+        padding: 40px 25px;
+    }
+
+    .letter-content {
+        font-size: 16px;
+    }
+
+    .letter-paper h1 {
+        font-size: 28px;
+    }
+
+}
