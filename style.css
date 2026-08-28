@@ -347,3 +347,19 @@ button:hover {
 .envelope.open .envelope-letter {
     transform: translateY(-85px);
 }
+
+/* MUSIC PLAYER */
+
+.music-player {
+    margin: -10px 0 35px;
+}
+
+.music-player p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.music-player iframe {
+    border-radius: 12px;
+}
